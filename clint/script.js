@@ -14,7 +14,7 @@ function loader(element) {
     element.textContent += ".";
 
     // If the loading indicator has reached three dots, reset it
-    if (element.textContent === "***") {
+    if (element.textContent === "...") {
       element.textContent = "";
     }
   }, 300);
@@ -82,7 +82,7 @@ const handleSubmit = async (e) => {
   loader(messageDiv);
 
   // fetch data or bot's response from server
-  const response = await fetch("https://randi-ai-vvnw.onrender.com/", {
+  const response = await fetch("https://randi-ai-vvnw.onrender.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
