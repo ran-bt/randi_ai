@@ -82,7 +82,7 @@ const handleSubmit = async (e) => {
   loader(messageDiv);
 
   // fetch data or bot's response from server
-  const response = await fetch("https://randi-ai.onrender.com", {
+  const response = await fetch("https://randi-ai-vvnw.onrender.com/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
